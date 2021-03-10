@@ -1,7 +1,7 @@
 /*
 *   MasterMind.cpp
-*   Author: Dominique Bitetti cloned by Sandro Gallo
-*   Date: 08/03/21
+*   Author: Aldini 3CIN
+*   Date: 10/03/21
 */
 
 #include <iostream>
@@ -16,8 +16,7 @@ class Mastermind
     int map[5];
     int test[5];
 
-    void init()
-    {
+    void init() {
         srand (time(NULL));
         for (int i=0; i<5; i++)
         {
@@ -26,13 +25,11 @@ class Mastermind
     }
 
     public:
-    Mastermind ()
-    {
+    Mastermind () {
         init();
     }
 
-    void stampa ()
-    {
+    void stampa () {
         for (int i=0; i<5; i++)
         {
             cout<<map[i]<<"\t";
@@ -40,8 +37,7 @@ class Mastermind
         cout<<endl;
     }
 
-    void play()
-    {
+    void play() {
         cout<<"Inserisci 5 numeri interi"<<endl;
         for (int i=0; i<5; i++)
         {
